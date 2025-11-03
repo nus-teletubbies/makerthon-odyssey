@@ -34,8 +34,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PUBLIC_URL: /makerthon-odyssey
           NODE_OPTIONS: --openssl-legacy-provider
+          CI: false
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
